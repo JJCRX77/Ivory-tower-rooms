@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furnished Rooms in Miraflores, Lima | Ivory Tower</title>
+<meta name="description" content="Furnished private rooms in Miraflores near the Malecón, Lima. Ideal student housing Miraflores and for remote workers, entrepreneurs, nurses. Flexible stays, hosted by JJ. Inquire for Miraflores rooms for rent.">
+<meta name="keywords" content="Miraflores rooms for rent, furnished rooms Miraflores Lima, student housing Miraflores, Ivory Tower">
+<style>
+  :root {
+    --ivory: #f7f4ef;
+    --sand: #e8e0d5;
+    --ocean: #1a4d6e;
+    --ocean-light: #2c6a8f;
+    --accent: #c4a35a;
+    --text: #2c2c2c;
+    --muted: #5a5a5a;
+    --white: #ffffff;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--ivory);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--ocean); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+  header {
+    background: var(--ocean);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header .container { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.5px; }
+  nav a { color: white; margin-left: 1.5rem; font-size: 0.95rem; }
+  .hero {
+    background: linear-gradient(rgba(26,77,110,0.45), rgba(26,77,110,0.55)), url('ivory-tower-01.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 1.25rem 5rem;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+  .hero p { font-size: 1.15rem; max-width: 640px; margin: 0 auto 2rem; opacity: 0.95; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.85rem 1.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .btn:hover { background: #b3924a; text-decoration: none; }
+  .btn-outline { background: transparent; border: 2px solid white; }
+  section { padding: 4rem 0; }
+  h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--ocean); }
+  .about { display: grid; gap: 2rem; }
+  .about img { border-radius: 8px; box-shadow: var(--shadow); }
+  .cards { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  .card h3 { margin-bottom: 0.5rem; color: var(--ocean); }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .gallery img { border-radius: 6px; height: 200px; object-fit: cover; width: 100%; }
+  .steps { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+  .step { background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent); }
+  .step strong { color: var(--ocean); }
+  .faq details {
+    background: white;
+    margin-bottom: 0.75rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+  }
+  .faq summary {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq details p { padding: 0 1.25rem 1rem; color: var(--muted); }
+  .cta {
+    background: linear-gradient(rgba(26,77,110,0.5), rgba(26,77,110,0.6)), url('ivory-tower-07.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 1.25rem;
+  }
+  .cta h2 { color: white; }
+  footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  .spanish { background: var(--sand); }
+  .placeholder { background: #fff3cd; color: #856404; padding: 0.2rem 0.4rem; border-radius: 3px; font-size: 0.85em; }
+  .whatsapp-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: #25d366;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 1.6rem;
+    z-index: 200;
+  }
+  .whatsapp-float:hover { text-decoration: none; background: #20ba5a; }
+  @media (min-width: 768px) {
+    .hero h1 { font-size: 3.2rem; }
+    .about { grid-template-columns: 1fr 1.2fr; align-items: center; }
+    .cards { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .steps { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">Ivory Tower</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#faq">FAQ</a>
+      <a href="#inquire">Inquire</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Your home base in Lima.</h1>
+    <p>Furnished private rooms in Miraflores, near the Malecón. Flexible stays, a simple agreement, and help getting settled from a host who did it himself.</p>
+    <a class="btn" href="#inquire">Inquire now → <span class="placeholder">[inquiry form link]</span></a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <img src="ivory-tower-11.jpg" alt="Bright desk corner with monitor by the window">
+    <div>
+      <h2>Hi, I'm JJ</h2>
+      <p>Hi, I'm JJ. I came to Lima from the US to do business, and I stayed. Today I'm a Peruvian citizen. I run my design work from this apartment, and I'm setting up a Lima company to import products. So I know what it's like to land here with a plan and a long list of things to figure out. Which neighborhood makes sense? How do you get around? Who do you ask? I've worked through those questions myself.</p>
+      <p>I started Ivory Tower as a home base for people who come to Peru to work, study, build or explore. You get a furnished private room, a desk, Wi-Fi, and someone in the house who knows how Lima works. I talk with every guest on a short video call before they move in. That way we both know it's a good fit.</p>
+      <p>If you're coming to Lima to get something done, I'd be glad to help you get settled.</p>
+    </div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="container">
+    <h2>Who stays here</h2>
+    <p>People who come to Peru with something to do.</p>
+    <div class="cards">
+      <div class="card"><h3>Entrepreneurs and business visitors</h3><p>In Lima to meet partners, test a market or start a company? Live with someone who is doing the same.</p></div>
+      <div class="card"><h3>Remote workers</h3><p>A quiet private room, a desk and Wi-Fi. Work your hours, then walk to the ocean.</p></div>
+      <div class="card"><h3>Nurses and medical professionals</h3><p>Experienced and freelance nurses and medical staff. Flexible stays that fit your contract.</p></div>
+      <div class="card"><h3>Visiting faculty</h3><p>Here for a term or a project? Skip the long lease and settle in fast.</p></div>
+      <div class="card"><h3>Students</h3><p>Studying in Lima? A calm home base, a desk, and a host who can point you in the right direction.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="rooms">
+  <div class="container">
+    <h2>The rooms</h2>
+    <p>Ivory Tower is a duplex in Miraflores, near the Malecón. I live here too.</p>
+    <p><strong>Available now:</strong> Two furnished private rooms.</p>
+    <p><strong>From December 2026:</strong> A third room with its own private bathroom.</p>
+    <p><strong>What's included:</strong></p>
+    <ul style="margin: 1rem 0 1.5rem 1.25rem;">
+      <li>A furnished private room</li>
+      <li>A desk</li>
+      <li>Wi-Fi</li>
+      <li>Optional home-cooked breakfast and dinner (see Meals)</li>
+      <li>A host who knows how Lima works</li>
+    </ul>
+    <p><strong>Rates:</strong> <span class="placeholder">[price]</span> per month. Or ask for rates → <span class="placeholder">[inquiry form link]</span></p>
+    <div class="gallery">
+      <img src="ivory-tower-09.jpg" alt="First bedroom with double bed, large mirror and wardrobe">
+      <img src="ivory-tower-11.jpg" alt="Desk and window side of first bedroom">
+      <img src="ivory-tower-12.jpg" alt="Wardrobe and desk in first bedroom">
+      <img src="ivory-tower-14.jpg" alt="Second bedroom with blue bedding and colorful wall art">
+      <img src="ivory-tower-15.jpg" alt="Desk by the window in second bedroom">
+      <img src="ivory-tower-03.jpg" alt="Dining table under the open staircase">
+      <img src="ivory-tower-02.jpg" alt="Living room with big mirror and balcony window">
+      <img src="ivory-tower-05.jpg" alt="Bathroom">
+      <img src="ivory-tower-06.jpg" alt="Bathroom">
+      <img src="ivory-tower-08.jpg" alt="Stacked washer and dryer">
+      <img src="ivory-tower-07.jpg" alt="Balcony view over Miraflores">
+    </div>
+  </div>
+</section>
+
+<section id="meals">
+  <div class="container">
+    <h2>Home-cooked meals, if you want them</h2>
+    <img src="ivory-tower-03.jpg" alt="Dining table under the staircase" style="border-radius:8px; margin-bottom:1.5rem; max-height:320px; object-fit:cover; width:100%;">
+    <p>Breakfast and dinner are optional. Some guests like to start the day with a home-cooked breakfast. Others like coming back to a real dinner after a long shift or a day of meetings. Some prefer to cook for themselves or eat out. It's your choice. Just let me know what works for you.</p>
+  </div>
+</section>
+
+<section id="life">
+  <div class="container">
+    <h2>Life in Miraflores</h2>
+    <img src="ivory-tower-07.jpg" alt="Balcony view over Miraflores" style="border-radius:8px; margin-bottom:1.5rem; max-height:320px; object-fit:cover; width:100%;">
+    <p>Miraflores is one of Lima's best-known neighborhoods, and it's easy to live in.</p>
+    <ul style="margin: 1rem 0 0 1.25rem;">
+      <li><strong>The Malecón.</strong> A long path of parks along the cliffs above the Pacific. People walk, run and cycle here every day.</li>
+      <li><strong>Parque Kennedy.</strong> The busy heart of the neighborhood, with cafés and restaurants all around.</li>
+      <li><strong>Cafés and coworking.</strong> Plenty of places to work, meet or take a call.</li>
+      <li><strong>Walkable.</strong> Many everyday things are a short walk away.</li>
+      <li><strong>Safe.</strong> Miraflores is generally considered one of Lima's safer districts. Normal city sense still applies.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><strong>1. Inquire.</strong> Fill in the short inquiry form. Tell me who you are, why you're coming to Lima and your dates. → <span class="placeholder">[inquiry form link]</span></div>
+      <div class="step"><strong>2. Video call.</strong> We have a short FaceTime or WhatsApp video call. You ask questions, I ask a few too. I share the full address after the call.</div>
+      <div class="step"><strong>3. Move in.</strong> We sign a simple one-page agreement, and you move in. I'll help you get settled.</div>
+    </div>
+    <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--muted);">No Airbnb, no agencies. I screen every guest personally.</p>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Questions</h2>
+    <details><summary>How long can I stay?</summary><p>As long as it works for you. Stays are flexible, and there's no long lease. We use a simple one-page agreement.</p></details>
+    <details><summary>How does payment work?</summary><p>Rent is paid one month in advance. There's also a deposit equal to one month's rent. It's a standard way to keep things simple and fair for everyone in the house.</p></details>
+    <details><summary>What if my plans change?</summary><p>Just give me two weeks' notice before you leave.</p></details>
+    <details><summary>Are meals included?</summary><p>Breakfast and dinner are optional and home-cooked. Let me know what you'd like and we'll sort it out.</p></details>
+    <details><summary>Do I need a visa?</summary><p>In general, US citizens can visit Peru without a visa. Rules depend on your nationality and on why you're coming, for example to work or study. Please check your own situation with official sources before you travel.</p></details>
+    <details><summary>Do I need to speak Spanish?</summary><p>No. I'm from the US, so we can talk in English. Some Spanish helps in daily life in Lima, and Miraflores is a good place to start learning.</p></details>
+    <details><summary>What's the neighborhood like?</summary><p>Miraflores is walkable, generally safe, and close to the Malecón and Parque Kennedy. There are lots of cafés, restaurants and places to work nearby.</p></details>
+    <details><summary>Where exactly is it?</summary><p>In Miraflores, near the Malecón. I share the full address after our video call.</p></details>
+  </div>
+</section>
+
+<section id="inquire" class="cta">
+  <h2>Coming to Lima? Let's talk.</h2>
+  <p>Tell me a little about your plans. If it looks like a fit, we'll set up a short video call.</p>
+  <p style="margin:1.5rem 0;"><a class="btn" href="#">Fill in the inquiry form → <span class="placeholder">[inquiry form link]</span></a></p>
+  <p>Or message me on WhatsApp: <span class="placeholder">[WhatsApp]</span></p>
+</section>
+
+<section class="spanish">
+  <div class="container">
+    <h2>Versión en español</h2>
+    <h3>Portada</h3>
+    <p><strong>Tu base en Lima.</strong></p>
+    <p>Habitaciones privadas amobladas en Miraflores, cerca del Malecón. Estadías flexibles, un contrato simple y ayuda para instalarte de parte de alguien que lo vivió.</p>
+    <p><a class="btn" href="#inquire">Consulta aquí → <span class="placeholder">[inquiry form link]</span></a></p>
+    <h3 style="margin-top:2rem;">Sobre JJ</h3>
+    <p>Hola, soy JJ. Vine a Lima desde Estados Unidos para hacer negocios y me quedé. Hoy soy ciudadano peruano. Trabajo en diseño desde este departamento y estoy formando una empresa en Lima para importar productos. Por eso sé lo que es llegar con un plan y una larga lista de cosas por resolver. ¿Qué barrio te conviene? ¿Cómo te mueves por la ciudad? ¿A quién le preguntas? Yo pasé por todo eso.</p>
+    <p>Creé Ivory Tower como una base para quienes vienen a Perú a trabajar, estudiar, emprender o explorar. Tienes una habitación privada amoblada, un escritorio, Wi-Fi y alguien en casa que sabe cómo funciona Lima. Hablo con cada huésped en una videollamada corta antes de que se mude. Así los dos sabemos si es una buena opción.</p>
+    <p>Si vienes a Lima a hacer algo, con gusto te ayudo a instalarte.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Ivory Tower · Furnished private rooms in Miraflores, near the Malecón · Hosted by JJ</p>
+  <p style="margin-top:0.5rem;">Miraflores rooms for rent · Furnished rooms Miraflores Lima · Student housing Miraflores</p>
+</footer>
+
+<a href="#" class="whatsapp-float" title="WhatsApp [WhatsApp]" aria-label="WhatsApp">💬</a>
+</body>
+</html>
